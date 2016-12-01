@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLSHFoodStampsIntroController">
+            <connections>
+                <outlet property="backHeight" destination="PI2-xO-V6U" id="ZfJ-R1-Sh0"/>
+                <outlet property="describe" destination="FxB-Zg-xKa" id="7Kc-MZ-rEq"/>
+                <outlet property="foodStampsWebview" destination="aBt-m7-sT9" id="WdO-0A-8EU"/>
+                <outlet property="getStamp" destination="ycg-6K-6i6" id="Vf5-Ct-x2l"/>
+                <outlet property="imageHeight" destination="yIi-n0-yrm" id="fqI-qe-8wP"/>
+                <outlet property="lookFoodStamps" destination="Wy0-tb-Uf9" id="apt-3n-3QS"/>
+                <outlet property="lookFoodStampsHeight" destination="0nR-JK-woJ" id="5vz-5N-5eZ"/>
+                <outlet property="tap1" destination="u7y-9h-pSE" id="ZxY-6M-xus"/>
+                <outlet property="tap2" destination="WGZ-vf-0TP" id="uOS-XA-8bH"/>
+                <outlet property="tap3" destination="zMy-3k-OYn" id="HsM-M5-2CS"/>
+                <outlet property="tap4" destination="ckH-IQ-ciH" id="bCB-U5-0bM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="579"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy0-tb-Uf9">
+                    <color key="backgroundColor" red="0.19250642970000001" green="0.59336142020000004" blue="0.031397244159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0nR-JK-woJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="查看我的粮票">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="lookFoodStamps:" destination="-1" eventType="touchUpInside" id="XEf-5V-wCg"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWR-dY-whm">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粮票是指粗粮生活平台按规则指定出的平台虚拟币，在购买商品是可使用粮票抵扣对应金额，也可转入余额进行提现。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxB-Zg-xKa">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="SoQ-MP-ib1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFQ-dT-F25">
+                            <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="xYS-93-ifb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FoodStampsAdv" translatesAutoresizingMaskIntoConstraints="NO" id="rnY-OJ-UpC">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="yIi-n0-yrm"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgS-e2-Azx">
+                            <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="SH2-SJ-Apg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如何获得粮票？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycg-6K-6i6">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="gNw-sz-qou"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBt-m7-sT9">
+                            <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </webView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="QgS-e2-Azx" firstAttribute="leading" secondItem="FxB-Zg-xKa" secondAttribute="leading" id="5Dw-dh-CJX"/>
+                        <constraint firstItem="rnY-OJ-UpC" firstAttribute="top" secondItem="eFQ-dT-F25" secondAttribute="bottom" constant="10" id="K0M-BL-Gez"/>
+                        <constraint firstItem="eFQ-dT-F25" firstAttribute="trailing" secondItem="FxB-Zg-xKa" secondAttribute="trailing" id="O3r-Fr-YYc"/>
+                        <constraint firstItem="aBt-m7-sT9" firstAttribute="leading" secondItem="FxB-Zg-xKa" secondAttribute="leading" id="OKy-Qa-gVu"/>
+                        <constraint firstAttribute="height" constant="400" id="PI2-xO-V6U"/>
+                        <constraint firstItem="aBt-m7-sT9" firstAttribute="trailing" secondItem="FxB-Zg-xKa" secondAttribute="trailing" id="PNg-Jc-Afi"/>
+                        <constraint firstItem="aBt-m7-sT9" firstAttribute="top" secondItem="QgS-e2-Azx" secondAttribute="bottom" constant="10" id="QZ5-ah-jMd"/>
+                        <constraint firstAttribute="bottom" secondItem="aBt-m7-sT9" secondAttribute="bottom" constant="10" id="V0T-Il-oCI"/>
+                        <constraint firstItem="eFQ-dT-F25" firstAttribute="top" secondItem="FxB-Zg-xKa" secondAttribute="bottom" constant="10" id="WGZ-vf-0TP"/>
+                        <constraint firstItem="rnY-OJ-UpC" firstAttribute="trailing" secondItem="FxB-Zg-xKa" secondAttribute="trailing" id="ZXv-mh-3CZ"/>
+                        <constraint firstAttribute="trailing" secondItem="FxB-Zg-xKa" secondAttribute="trailing" constant="10" id="cUf-NH-dod"/>
+                        <constraint firstItem="QgS-e2-Azx" firstAttribute="top" secondItem="ycg-6K-6i6" secondAttribute="bottom" constant="10" id="ckH-IQ-ciH"/>
+                        <constraint firstItem="FxB-Zg-xKa" firstAttribute="leading" secondItem="sWR-dY-whm" secondAttribute="leading" constant="10" id="dJn-gF-JLy"/>
+                        <constraint firstItem="ycg-6K-6i6" firstAttribute="leading" secondItem="FxB-Zg-xKa" secondAttribute="leading" id="dr7-T3-P0e"/>
+                        <constraint firstItem="rnY-OJ-UpC" firstAttribute="leading" secondItem="FxB-Zg-xKa" secondAttribute="leading" id="fSH-I0-Oud"/>
+                        <constraint firstItem="ycg-6K-6i6" firstAttribute="trailing" secondItem="FxB-Zg-xKa" secondAttribute="trailing" id="im5-h3-swr"/>
+                        <constraint firstItem="eFQ-dT-F25" firstAttribute="leading" secondItem="FxB-Zg-xKa" secondAttribute="leading" id="lhb-vf-V7A"/>
+                        <constraint firstItem="QgS-e2-Azx" firstAttribute="trailing" secondItem="FxB-Zg-xKa" secondAttribute="trailing" id="plt-xv-yef"/>
+                        <constraint firstItem="FxB-Zg-xKa" firstAttribute="top" secondItem="sWR-dY-whm" secondAttribute="top" constant="10" id="u7y-9h-pSE"/>
+                        <constraint firstItem="ycg-6K-6i6" firstAttribute="top" secondItem="rnY-OJ-UpC" secondAttribute="bottom" constant="10" id="zMy-3k-OYn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sWR-dY-whm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="IjN-vz-mvr"/>
+                <constraint firstItem="sWR-dY-whm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Oau-gs-Gw7"/>
+                <constraint firstAttribute="bottom" secondItem="Wy0-tb-Uf9" secondAttribute="bottom" constant="20" id="PJi-Ks-afv"/>
+                <constraint firstItem="Wy0-tb-Uf9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="cGN-9Y-EhZ"/>
+                <constraint firstAttribute="trailing" secondItem="sWR-dY-whm" secondAttribute="trailing" id="grP-Ec-K3v"/>
+                <constraint firstAttribute="trailing" secondItem="Wy0-tb-Uf9" secondAttribute="trailing" constant="10" id="h6g-2b-rjl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="387" y="688.5"/>
+        </view>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WVc-gc-mnX">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4s-0e-Eco">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="kAx-sg-KSZ"/>
+                    </constraints>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3i-vA-JEI">
+                    <color key="backgroundColor" red="0.19250642970000001" green="0.59336142020000004" blue="0.031397244159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VPe-fh-bZW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="查看我的粮票">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q3i-vA-JEI" firstAttribute="leading" secondItem="WVc-gc-mnX" secondAttribute="leading" constant="10" id="8WU-C0-vGS"/>
+                <constraint firstItem="q3i-vA-JEI" firstAttribute="top" secondItem="K4s-0e-Eco" secondAttribute="bottom" constant="60" id="Dz2-H4-j5s"/>
+                <constraint firstItem="K4s-0e-Eco" firstAttribute="top" secondItem="WVc-gc-mnX" secondAttribute="top" constant="10" id="UEW-1v-3ro"/>
+                <constraint firstAttribute="trailing" secondItem="q3i-vA-JEI" secondAttribute="trailing" constant="10" id="f43-f9-dRV"/>
+                <constraint firstItem="K4s-0e-Eco" firstAttribute="leading" secondItem="WVc-gc-mnX" secondAttribute="leading" id="yk1-oC-nZx"/>
+                <constraint firstAttribute="trailing" secondItem="K4s-0e-Eco" secondAttribute="trailing" id="z3Z-sv-dKA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="578" y="947"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FoodStampsAdv" width="350" height="130"/>
+    </resources>
+</document>

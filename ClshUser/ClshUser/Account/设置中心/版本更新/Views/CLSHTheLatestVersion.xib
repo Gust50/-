@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CLSHTheLatestVersion">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ga8-8J-RIc">
+                    <rect key="frame" x="30" y="225" width="315" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPR-xO-0uy">
+                            <rect key="frame" x="0.0" y="105" width="315" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="M8D-E7-cik"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="确认">
+                                <color key="titleColor" red="0.0" green="0.58431372550000005" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="U1C-Pi-iLg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前已经是最新版本？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmU-ur-C4M">
+                            <rect key="frame" x="30" y="10" width="255" height="85"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dmU-ur-C4M" firstAttribute="top" secondItem="Ga8-8J-RIc" secondAttribute="top" constant="10" id="5nt-pB-rHt"/>
+                        <constraint firstItem="pPR-xO-0uy" firstAttribute="top" secondItem="dmU-ur-C4M" secondAttribute="bottom" constant="10" id="994-eW-SO7"/>
+                        <constraint firstAttribute="bottom" secondItem="pPR-xO-0uy" secondAttribute="bottom" id="AYi-XN-iIr"/>
+                        <constraint firstAttribute="height" constant="150" id="KdF-q4-dL0"/>
+                        <constraint firstAttribute="trailing" secondItem="pPR-xO-0uy" secondAttribute="trailing" id="bl4-mM-ys6"/>
+                        <constraint firstAttribute="trailing" secondItem="dmU-ur-C4M" secondAttribute="trailing" constant="30" id="fBm-h8-qX0"/>
+                        <constraint firstItem="dmU-ur-C4M" firstAttribute="leading" secondItem="Ga8-8J-RIc" secondAttribute="leading" constant="30" id="oHI-p3-0ea"/>
+                        <constraint firstItem="pPR-xO-0uy" firstAttribute="leading" secondItem="Ga8-8J-RIc" secondAttribute="leading" id="rgD-jo-Hzk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.35686274509999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ga8-8J-RIc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="3o3-MF-3gF"/>
+                <constraint firstAttribute="trailing" secondItem="Ga8-8J-RIc" secondAttribute="trailing" constant="30" id="Icf-Wb-Qdh"/>
+                <constraint firstItem="Ga8-8J-RIc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mPC-18-NJJ"/>
+                <constraint firstItem="Ga8-8J-RIc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oCC-zF-I6m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirm" destination="pPR-xO-0uy" id="sv5-5c-EGR"/>
+                <outlet property="describe" destination="dmU-ur-C4M" id="8go-c3-hLt"/>
+                <outlet property="displayView" destination="Ga8-8J-RIc" id="FID-Ye-X2T"/>
+            </connections>
+        </view>
+    </objects>
+</document>

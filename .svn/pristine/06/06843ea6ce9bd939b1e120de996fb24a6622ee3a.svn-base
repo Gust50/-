@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLSHPromotionSystemMotifyVCViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4p-7i-Xdc">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="aul-ex-fUf"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="消费者可以按照分享自己的推广二维码或手机号获得的积分进行自动晋升，推广一家商户获得10积分，推广一个消费者获得1积分。具体晋升条件如下：">
+                            <attributes>
+                                <font key="NSFont" size="16" name="PingFangSC-Regular"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promote" translatesAutoresizingMaskIntoConstraints="NO" id="IwL-Ev-M5N">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="iB3-HF-HXI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*推广的消费者除了获得交易额奖励外，更可获得消费者本次消费10%的奖励现金" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri0-wi-frR">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="R4p-7i-Xdc" secondAttribute="trailing" constant="8" id="4K4-Yk-rbh"/>
+                <constraint firstItem="IwL-Ev-M5N" firstAttribute="top" secondItem="R4p-7i-Xdc" secondAttribute="bottom" constant="5" id="DEy-Qv-cpv"/>
+                <constraint firstAttribute="trailing" secondItem="ri0-wi-frR" secondAttribute="trailing" constant="20" id="LFK-Pd-gsR"/>
+                <constraint firstItem="IwL-Ev-M5N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="PdN-T5-bXJ"/>
+                <constraint firstAttribute="trailing" secondItem="IwL-Ev-M5N" secondAttribute="trailing" constant="8" id="Uie-pT-ed7"/>
+                <constraint firstItem="R4p-7i-Xdc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="fge-v5-nLl"/>
+                <constraint firstItem="ri0-wi-frR" firstAttribute="top" secondItem="IwL-Ev-M5N" secondAttribute="bottom" constant="8" id="hht-Zu-Tmo"/>
+                <constraint firstItem="ri0-wi-frR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="tBO-GP-vQ2"/>
+                <constraint firstItem="R4p-7i-Xdc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="xIC-6o-wrI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="259" y="495"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="promote" width="375" height="311"/>
+    </resources>
+</document>

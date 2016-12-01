@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClshUser/Neighborhood/Controllers/CLGSNeighborhoodVC.m"
+            timestampString = "496654678.556681"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "-loadOtherData"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.244"
+                  moduleName = "ClshUser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kobe/Desktop/%E7%B2%97%E7%B2%AE%E7%94%9F%E6%B4%BB(%E7%94%A8%E6%88%B7%E7%89%88)/ClshUser/ClshUser/Neighborhood/Controllers/CLGSNeighborhoodVC.m"
+                  timestampString = "499657356.853844"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.245"
+                  moduleName = "ClshUser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kobe/Desktop/%E7%B2%97%E7%B2%AE%E7%94%9F%E6%B4%BB(%E7%94%A8%E6%88%B7%E7%89%88)/ClshUser/ClshUser/Neighborhood/Controllers/CLGSNeighborhoodVC.m"
+                  timestampString = "499657356.856381"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

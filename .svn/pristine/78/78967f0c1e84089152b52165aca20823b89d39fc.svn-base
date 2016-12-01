@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLSHMerchantJoiningVC">
+            <connections>
+                <outlet property="applicationHeight" destination="GSY-hP-bN5" id="fiF-yn-JAq"/>
+                <outlet property="applicationJoin" destination="OyF-xG-rxO" id="jct-PN-dDB"/>
+                <outlet property="applicationJoinHeight" destination="YaS-fb-9Qw" id="mlZ-GS-CBL"/>
+                <outlet property="back1Height" destination="bOP-b7-qfG" id="P5d-FW-vUX"/>
+                <outlet property="back2Height" destination="eei-CX-nkr" id="9Xg-hV-sHg"/>
+                <outlet property="imageViewHeight" destination="y6c-QS-auT" id="Vwa-XS-uy8"/>
+                <outlet property="merchantJoinLabel" destination="gE7-T1-Tia" id="eK9-4N-0O7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="TXe-bE-alp" id="Oj6-Ut-BpB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="634"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyF-xG-rxO">
+                    <color key="backgroundColor" red="0.16078431372549018" green="0.65490196078431373" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="GSY-hP-bN5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="申请入驻">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="applicationMerchantJoin:" destination="-1" eventType="touchUpInside" id="puz-iL-9jF"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYE-xz-0uy">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmq-m1-KJd">
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MerchantSettleAdv" translatesAutoresizingMaskIntoConstraints="NO" id="2Cq-YK-5fI">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="y6c-QS-auT"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家入驻的条件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gE7-T1-Tia">
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-1i-oLG">
+                                    <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="sLx-lj-0vR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="hHa-1i-oLG" firstAttribute="leading" secondItem="qmq-m1-KJd" secondAttribute="leading" constant="10" id="JwO-6T-da2"/>
+                                <constraint firstItem="2Cq-YK-5fI" firstAttribute="leading" secondItem="qmq-m1-KJd" secondAttribute="leading" constant="10" id="S85-U0-ycd"/>
+                                <constraint firstAttribute="trailing" secondItem="2Cq-YK-5fI" secondAttribute="trailing" constant="10" id="X8Z-eg-DFL"/>
+                                <constraint firstAttribute="bottom" secondItem="gE7-T1-Tia" secondAttribute="bottom" constant="10" id="Yea-eL-svm"/>
+                                <constraint firstItem="gE7-T1-Tia" firstAttribute="leading" secondItem="qmq-m1-KJd" secondAttribute="leading" constant="10" id="YmU-pe-MxE"/>
+                                <constraint firstItem="gE7-T1-Tia" firstAttribute="top" secondItem="2Cq-YK-5fI" secondAttribute="bottom" constant="10" id="bbW-27-49V"/>
+                                <constraint firstItem="2Cq-YK-5fI" firstAttribute="top" secondItem="qmq-m1-KJd" secondAttribute="top" id="cRi-PX-FXY"/>
+                                <constraint firstAttribute="bottom" secondItem="hHa-1i-oLG" secondAttribute="bottom" id="cbv-ve-hbH"/>
+                                <constraint firstAttribute="height" constant="160" id="eei-CX-nkr"/>
+                                <constraint firstAttribute="trailing" secondItem="gE7-T1-Tia" secondAttribute="trailing" constant="10" id="pWT-7B-H0Q"/>
+                                <constraint firstAttribute="trailing" secondItem="hHa-1i-oLG" secondAttribute="trailing" constant="10" id="rkD-Hz-ddZ"/>
+                            </constraints>
+                        </view>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXe-bE-alp">
+                            <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </webView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TXe-bE-alp" secondAttribute="trailing" constant="10" id="29P-zi-onP"/>
+                        <constraint firstAttribute="trailing" secondItem="qmq-m1-KJd" secondAttribute="trailing" id="6gE-OF-ssw"/>
+                        <constraint firstItem="TXe-bE-alp" firstAttribute="top" secondItem="qmq-m1-KJd" secondAttribute="bottom" constant="10" id="Daf-1C-DU0"/>
+                        <constraint firstItem="qmq-m1-KJd" firstAttribute="top" secondItem="MYE-xz-0uy" secondAttribute="top" constant="10" id="PPK-l7-cbL"/>
+                        <constraint firstAttribute="height" constant="400" id="bOP-b7-qfG"/>
+                        <constraint firstItem="qmq-m1-KJd" firstAttribute="leading" secondItem="MYE-xz-0uy" secondAttribute="leading" id="fqE-ej-YqV"/>
+                        <constraint firstItem="TXe-bE-alp" firstAttribute="leading" secondItem="MYE-xz-0uy" secondAttribute="leading" constant="10" id="ihS-Zf-dwZ"/>
+                        <constraint firstAttribute="bottom" secondItem="TXe-bE-alp" secondAttribute="bottom" constant="10" id="sNS-bL-vUp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MYE-xz-0uy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="05b-8c-KER"/>
+                <constraint firstAttribute="trailing" secondItem="OyF-xG-rxO" secondAttribute="trailing" constant="10" id="PZj-XN-022"/>
+                <constraint firstItem="OyF-xG-rxO" firstAttribute="top" secondItem="MYE-xz-0uy" secondAttribute="bottom" constant="20" id="YaS-fb-9Qw"/>
+                <constraint firstAttribute="trailing" secondItem="MYE-xz-0uy" secondAttribute="trailing" id="jDy-aS-TZk"/>
+                <constraint firstItem="MYE-xz-0uy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="kJE-Zv-70a"/>
+                <constraint firstItem="OyF-xG-rxO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="rJK-Ug-Cua"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="545.5" y="334"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MerchantSettleAdv" width="350" height="130"/>
+    </resources>
+</document>

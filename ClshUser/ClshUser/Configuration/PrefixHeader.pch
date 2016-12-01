@@ -1,0 +1,109 @@
+//
+//  PrefixHeader.pch
+//  ClshUser
+//
+//  Created by kobe on 16/5/25.
+//  Copyright © 2016年 kobe. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+KBExtension.h"
+#import "UrlHeader.h"
+#import "MJExtension.h"
+#import "KBHttpTool.h"
+#import "NSObject+KBExtension.h"
+#import "FetchAppPublicKeyModel.h"
+#import "BaseModel.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD+KBExtension.h"
+#import "KBRSA.h"
+#import "UIImage+KBExtension.h"
+#import "NSString+KBExtension.h"
+#import "KBRegexp.h"
+#import "KBRefreshGifHeader.h"
+#import "KBRefreshAutoGifFooter.h"
+#import "CLGSLoadHtmlWebVC.h"
+#import "KBAppShare.h"
+#import "KBDateFormatter.h"
+#import "Masonry.h"
+#import "UIButton+KBExtension.h"
+
+//16进制颜色
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//RGB颜色
+#define RGBColor(r,g,b)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define RGBAColor(r,g,b,a)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define SCREENWIDTH   [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
+
+//等比放大
+#define pro [UIScreen mainScreen].bounds.size.width/320
+
+//默认的颜色
+#define systemColor [UIColor colorWithRed:0/255.0 green:149/255.0 blue:68/255.0 alpha:1.0]
+//默认的字体颜色
+#define systemFontColor [UIColor colorWithRed:132/255.0 green:136/255.0 blue:141/255.0 alpha:1.0]
+//背景颜色
+#define backGroundColor [UIColor colorWithRed:240/255.0 green:240/255.0 blue:243/255.0 alpha:1.0]
+
+//masonry弱引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+//服务器报错信息
+#define ServerError [NSString stringWithFormat:@"请求超时"]    //!<服务器报错信息
+
+// 取得AppDelegate单利
+#define ShareApp ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+
+//调试一段代码的执行时间
+#define TICK   NSDate *startTime = [NSDate date]
+#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow])
+
+//调试信息输出
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
+//#ifdef DEBUG
+//# define DLog(format, ...) NSLog((@"[文件名:%s]" "[函数名:%s]" "[行号:%d]" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+//#else
+//# define DLog(...);
+//#endif
+
+#ifdef DEBUG
+#define LRString [NSString stringWithFormat:@"%s", __FILE__].lastPathComponent
+#define LRLog(...) printf("%s: %s 第%d行: %s\n\n",[[NSString lr_stringDate] UTF8String], [LRString UTF8String] ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+#else
+#define LRLog(...)
+#endif
+
+/**
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+*/
+
+
+
+#ifdef DEBUG
+#define NULLSAFE_ENABLED 0
+#endif
+
+
+#endif /* PrefixHeader_pch */
